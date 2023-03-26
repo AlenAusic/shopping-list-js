@@ -1,2 +1,5 @@
-- name: Deploy Github repo to Caprover
-  uses: caprover/deploy-from-github@v1.1.2
+uses: AlexxNB/caprover-action@v1
+with:
+  server: 'https://captain.cap.ausic.co'
+  password: '${{ secrets.CAPROVER_PASSWORD }}'
+  appname: 'shopping-list'
